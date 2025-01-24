@@ -10,6 +10,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             margin: 0;
             background-color: #f0f0f0;
@@ -17,17 +18,21 @@
         h1 {
             color: #333;
         }
-        /* Hide the Mastodon link */
         a[rel="me"] {
-            display: none;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #0073e6;
+            text-decoration: none;
+        }
+        a[rel="me"]:hover {
+            color: #005bb5;
         }
     </style>
 </head>
 <body>
     <h1>Hello, World!</h1>
 
-    <!-- Mastodon link (hidden) -->
-    <a rel="me" href="https://mastodon.nl/@jpp">Mastodon</a>
+    <!-- Mastodon link (visible for verification) -->
+    <a rel="me" href="https://mastodon.nl/@jpp">Verify me on Mastodon</a>
 </body>
 </html>
-
