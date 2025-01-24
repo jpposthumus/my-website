@@ -22,10 +22,16 @@
         a[rel="me"] {
             display: none;
         }
-        .bluesky-icon {
+        .icons-container {
             margin-top: 20px;
-            width: 80px;  /* Set the size of the icon to 80x80 */
-            height: 80px;
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Space between the icons */
+        }
+        .bluesky-icon,
+        .linkedin-icon {
+            width: 50px;  /* Set the size of the icons */
+            height: 50px;
         }
     </style>
 </head>
@@ -35,9 +41,14 @@
     <!-- Mastodon link (hidden) -->
     <a rel="me" href="https://mastodon.nl/@jpp">Mastodon</a>
 
-    <!-- Bluesky icon link -->
-    <a href="https://bsky.app/profile/jpposthumus.nl">
-        <img class="bluesky-icon" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg" alt="Bluesky Logo">
-    </a>
+    <!-- Bluesky and LinkedIn icons -->
+    <div class="icons-container">
+        <a href="https://bsky.app/profile/jpposthumus.nl">
+            <img class="bluesky-icon" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg" alt="Bluesky Logo">
+        </a>
+        <a href="https://www.linkedin.com/in/posthumus/" target="_blank">
+            <img class="linkedin-icon" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo">
+        </a>
+    </div>
 </body>
 </html>
